@@ -1,6 +1,6 @@
 .profile {
   min-width: 280px;
-  max-width: 30%;
+  max-width: 40%;
   margin-top: 5vh;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,6 @@
   box-shadow: rgba(105, 170, 183, 0.475) 5px 15px 25px;
   border-radius: 2%;
   background-color: #fff;
-  margin-left: 5vh;
 }
 
 .description {
@@ -28,7 +27,7 @@
 
 .profileName {
   margin-bottom: 30px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.5rem;
 }
 
@@ -89,4 +88,9 @@
 .quantity {
   font-weight: bold;
   border-radius: 0.5rem;
+}
+.friendList {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }

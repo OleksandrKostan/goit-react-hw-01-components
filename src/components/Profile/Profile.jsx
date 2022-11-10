@@ -9,21 +9,21 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
                 alt="User avatar"
                 className={css.avatar}
             />
-            <p className={css.name}>{username}</p>
-            <p className={css.tag}>{tag}</p>
-            <p className={css.location}>{location}</p>
+            <p className={css.profileName}>{username}</p>
+            <p className={css.profileTag}>{tag}</p>
+            <p className={css.profileLocation}>{location}</p>
         </div>
 
         <ul className={css.stats}>
-            <li>
+            <li className={css.followersList}>
                 <span className={css.label}>Followers</span>
                 <span className={css.quantity}>{stats.followers}</span>
             </li>
-            <li>
+            <li className={css.viewsList}>
                 <span className={css.label}>Views</span>
                 <span className={css.quantity}>{stats.views}</span>
             </li>
-            <li>
+            <li  className={css.likesList}>
                 <span className={css.label}>Likes</span>
                 <span className={css.quantity}>{stats.likes}</span>
             </li>

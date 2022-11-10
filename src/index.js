@@ -6,6 +6,9 @@ import './index.css';
 import { Profile } from 'components/Profile/Profile.jsx';
 import user from 'components/Profile/user.json';
 
+import { Statistics } from 'components/Statistics/Statistics.jsx';
+import data from 'components/Statistics/data.json';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App>
@@ -16,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </App>
   </React.StrictMode>
 );

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
+import {StatisticCard} from'./Statistics.styled'
 
 function getRandomHexColor() {
   let bgColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -7,7 +8,7 @@ function getRandomHexColor() {
 };
 
 export const Statistics = ({ title, stats }) => {
-    return <div className={css.statisticsContainer}>
+    return <StatisticCard>
     <section className={css.statistics}>
         {title && <h2 className={css.title} >{title}</h2>}
   
@@ -26,7 +27,7 @@ export const Statistics = ({ title, stats }) => {
           </li>
         ))}
   </ul>
-</section></div>
+</section></StatisticCard>
 };
 
 Statistics.propTypes = {

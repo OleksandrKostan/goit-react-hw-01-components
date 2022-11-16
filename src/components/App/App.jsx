@@ -1,3 +1,5 @@
+
+
 // завдання 1
 import { Profile } from 'components/Profile/Profile.jsx';
 import user from 'components/Profile/user.json';
@@ -26,6 +28,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} /></>
-      
+    <TransactionHistory items={transactions} />
+    </>
+
 };

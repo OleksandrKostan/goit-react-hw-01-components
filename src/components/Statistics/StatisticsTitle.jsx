@@ -5,6 +5,6 @@ export const Title = ({ title }) => {
   return title && <StyledTitle>{title.toUpperCase()}</StyledTitle>;
 };
 
-Title.porpTypes = {
+Title.protoTypes = {
   title: PropTypes.string,
-};
+}.isRequired;

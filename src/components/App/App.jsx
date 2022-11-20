@@ -1,4 +1,8 @@
+import { ThemeProvider } from 'styled-components';
+import { theme } from './Theme';
+import { Box } from './Box';
 
+ 
 
 // завдання 1
 import { Profile } from 'components/Profile/Profile.jsx';
@@ -19,6 +23,8 @@ import transactions from 'components/TransactionHistory/transactions.json';
 
 export const App = () => {
   return <>
+    <ThemeProvider theme={theme}> 
+      <Box bg="primary" as="main">
     <Profile
         username={user.username}
         tag={user.tag}
@@ -28,7 +34,8 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-    <TransactionHistory items={transactions} />
+    <TransactionHistory items={transactions} /></Box>
+    </ThemeProvider> 
     </>
 
 };

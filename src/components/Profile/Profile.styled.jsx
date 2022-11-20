@@ -11,7 +11,7 @@ export const ProfileCart = styled.div`
   align-items: center;
   box-shadow: rgba(105, 170, 183, 0.475) 5px 15px 25px;
   border-radius: 2%;
-  background-color: #fff;
+  background-color: ${props => props.theme.colors.white};
 `;
 
 export const ProfileImg = styled.div`
@@ -26,7 +26,7 @@ export const AvatarImg = styled.img`
 display: flex;
   max-width: 40%;
   border-radius: 50%;
-  border: 2px groove rgba(105, 170, 183, 0.475);
+  border: 2px groove #69aab779;
 `;
 export const ProfileName = styled.p`
  margin-bottom: 30px;

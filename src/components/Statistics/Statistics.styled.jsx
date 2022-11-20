@@ -12,7 +12,7 @@ max-width: 40%;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
-  background-color: #fff;`;
+  background-color: ${props => props.theme.colors.white};`
 
 export const StyledTitle = styled.h2`
 margin: 25px;
@@ -40,7 +40,7 @@ export const StatListItem = styled.li`
  display: flex;
   flex-direction: column;
   text-align: center;
-  text-shadow: 0 0 3px #000;
+  text-shadow: ${props => `0 0 3px ${props => props.theme.colors.white}`};
   width: calc((100% - 0.04px) / 5);
   overflow-wrap: break-word;
   border: 1px solid rgba(85, 87, 87, 0.475);
@@ -55,10 +55,10 @@ background-color: ${getRandomHexColor};
 
 export const Label = styled.span`padding-top: 10px;
   font-size: 1rem;
-  color: #fff;
+  color: ${props => props.theme.colors.white};
   overflow-wrap: break-word;`;
 
 export const Percentage = styled.span`padding: 5px;
   font-size: 1rem;
   font-weight: bold;
-  color: #fff;`;
+  color: ${props => props.theme.colors.white}`;

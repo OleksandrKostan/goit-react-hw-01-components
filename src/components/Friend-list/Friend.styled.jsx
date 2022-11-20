@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 
 export const FriendStyled = styled.ul`list-style: none;
@@ -36,12 +37,12 @@ export const Status = styled.span`
   margin: auto 1.7rem;
   height: 30px;
   width: 30px;
-  background-color: ${props => {
-        switch (props.isOnline) {
-            case props.isOnline = true:
-                return 'green';
+  background-color: ${({isOnline, theme}) => {
+        switch (isOnline) {
+            case isOnline = true:
+                return theme.colors.green;
             default:
-                return 'red'
+                return theme.colors.red
         }
     }}`;
 
